@@ -1,0 +1,8 @@
+{
+	"C_Cpp.default.configurationProvider": "BartmanAbyss.amiga-debug",
+	"files.associations": {
+		"__locale": "c",
+		"locale": "c",
+		"functional": "c"
+	}
+}

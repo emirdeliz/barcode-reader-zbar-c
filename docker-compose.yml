@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  barcode:
+    build:
+      context: .
+    image: gcc:latest
+    command: bash -c "gcc ./code/test/c_barcode.test.c -o ./c_barcode.test && ./c_barcode.test"
+    volumes:
+      - ./:/code
+    stdin_open: true
