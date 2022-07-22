@@ -40,6 +40,8 @@ char barcode_expected_with_check_digits_mod_11_2[] = "23793381286000422050969000
 void run(char barcode[], char expected[], int mod)
 {
 	char *result_mod = malloc(48 + 1);
+	memset(result_mod, '\0', strlen(result_mod));
+
 	c_apply_maybe_check_digit_to_barcode(barcode, result_mod, barcode_length);
 
 	if (strcmp(result_mod, expected) != 0)

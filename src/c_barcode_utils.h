@@ -182,7 +182,7 @@ int c_check_if_barcode_is_from_insurance(char *barcode_char_array)
  */
 void c_apply_maybe_check_digit_to_barcode(char barcode[], char target[], int barcode_length)
 {
-	// memset(target, '\0', strlen(target));
+	memset(target, '\0', strlen(target));
 	int is_barcode_from_insurance = c_check_if_barcode_is_from_insurance(barcode);
 	if (is_barcode_from_insurance == 0)
 	{
